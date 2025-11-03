@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "IVR_Segment_SBA",
+    "password": "6ct!BaRT5Z!7A9u7",
+    "database": "ivr_db_SB",
+    "host": "10.11.1.95",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "encrypt": false,
+        "trustServerCertificate": true,
+        "enableArithAbort": true
+      }
+    },
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
