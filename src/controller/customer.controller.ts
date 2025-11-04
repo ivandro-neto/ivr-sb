@@ -45,6 +45,7 @@ export const getCustomerInfo = async (
     //@ts-ignore
     return res.status(200).json({
       message,
+      client_name : customer.name,
       manager_name : manager.name,
       manager_extension : manager.extension
     });
