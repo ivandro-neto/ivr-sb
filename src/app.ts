@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import router from "./routes/router";
 import { connectDB } from "./config/db";
 
+
 dotenv.config();
 
 const app = express();
@@ -13,6 +14,8 @@ app.use("/audio", express.static("public/audio"));
 app.use(express.json());
 app.use(cors());
 app.use(router);
+
+
 
 // Conectar ao banco antes de iniciar o servidor
 connectDB()

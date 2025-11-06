@@ -38,7 +38,13 @@ export const getCustomerInfo = async (
     }
     message = `Seja bem-vindo ao Standard Bank Angola, ${
       customer.gender === "M" ? "Sr." : "Sra."
-    } ${customer.name}. O seu gestor, ${
+    } ${customer.name}. ${
+      manager.gender === "M" ? "O" : "A"
+    } ${
+      manager.gender === "M" ? "seu" : "sua"
+    } gesto${
+      manager.gender === "M" ? "r" : "ra"
+    }, ${
       manager.gender === "M" ? "Sr." : "Sra."
     } ${manager.name}, já vai atender. Por favor, aguarde um momento.`;
 

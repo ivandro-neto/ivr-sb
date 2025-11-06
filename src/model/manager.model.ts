@@ -26,12 +26,9 @@ Manager.init(
       allowNull: false,
     },
     extension: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: false,
-      validate: {
-        min: 1000,
-        max: 9999
-      }
+      
     },
   },
   {
